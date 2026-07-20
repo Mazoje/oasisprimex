@@ -15,10 +15,12 @@ export default function RootLayout({
 }>) {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Added API Docs directly to the main navigation array
   const navigationLinks = [
     { label: "Infrastructure", href: "/infrastructure" },
     { label: "SwipeX Secure", href: "/swipex-secure" },
     { label: "Developers", href: "/developers" },
+    { label: "API Docs", href: "/docs" },
     { label: "Company", href: "/company" },
   ];
 
@@ -51,13 +53,7 @@ export default function RootLayout({
 
               {/* Action Buttons & Hamburger Toggle */}
               <div className="flex items-center gap-x-4">
-                <a href="/sign-in" className="hidden sm:block text-xs font-semibold tracking-wide text-zinc-400 hover:text-white transition-colors">Sign In</a>
-                <a 
-                  href="/docs" 
-                  className="hidden xs:inline-flex bg-zinc-900 border border-zinc-800 text-zinc-200 hover:bg-zinc-800 hover:text-white font-medium text-xs rounded-lg px-4 py-1.5 transition-colors"
-                >
-                  View API Docs
-                </a>
+                <a href="/sign-in" className="text-xs font-semibold tracking-wide text-zinc-400 hover:text-white transition-colors">Sign In</a>
 
                 {/* Mobile Menu Button */}
                 <button
@@ -92,11 +88,6 @@ export default function RootLayout({
                       {link.label}
                     </a>
                   ))}
-                  <hr className="border-zinc-900 my-2" />
-                  <div className="flex flex-col gap-y-3 pt-2">
-                    <a href="/sign-in" onClick={() => setIsOpen(false)} className="text-xs text-zinc-400 hover:text-white">Sign In</a>
-                    <a href="/docs" onClick={() => setIsOpen(false)} className="text-xs text-cyan-400 font-semibold">View API Docs</a>
-                  </div>
                 </nav>
               </div>
             )}
