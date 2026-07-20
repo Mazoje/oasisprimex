@@ -16,9 +16,17 @@ export default function CompanyPage() {
             Architecting Financial Trust
           </h1>
           <p className="mt-6 text-sm text-zinc-400 max-w-2xl leading-7">
-            OasisPrimeX was founded by a distributed group of cryptography researchers and infrastructure engineers. We build the low-level primitive software layers that protect critical capital routing channels globally, ensuring transactional intent matches structural execution perfectly.
-          </p>
+           OasisPrimeX was founded by security researchers and infrastructure engineers. We build the core software that protects global payment networks, making sure every transaction goes exactly where it belongs safely and accurately.
+             </p>
         </div>
+        <div className="flex flex-wrap gap-4 mt-8">
+  <button className="px-6 py-3 font-medium text-white bg-cyan-600 rounded-lg hover:bg-cyan-500">
+    Explore the Docs
+  </button>
+  <button className="px-6 py-3 font-medium text-gray-300 border border-gray-700 rounded-lg hover:bg-gray-800">
+    Contact Sales
+  </button>
+</div>
       </section>
 
       {/* SECTION 2: OPERATIONAL PRINCIPLES */}
@@ -30,9 +38,9 @@ export default function CompanyPage() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
-            { title: "Mathematical Determinism", desc: "We replace human assumption points and fragile administrative controls with absolute, verifiable cryptographic handshakes across every internal system." },
-            { title: "Zero Boundary Trust", desc: "No microservice or system network path is implicitly trusted. Authentication parameters mutate continuously, forcing validation loops at every node edge." },
-            { title: "Infrastructure Resilience", desc: "We run our own bare-metal physical HSM enclaves in high-availability data zones rather than relying wholly on shared generic cloud infrastructure layers." }
+            { title: "Mathematical Determinism", desc: "We secure every internal system with mathematically proven encryption, replacing unreliable manual checks with strict, automated security." },
+            { title: "Zero Boundary Trust", desc: "We never assume any connection is safe. Security requirements change continuously, forcing every single network request to constantly prove its identity before moving forward." },
+            { title: "Infrastructure Resilience", desc: "Instead of relying entirely on shared, generic cloud servers, we operate our own dedicated, highly secure physical hardware to guarantee maximum reliability and protection for your data." }
           ].map((principle, i) => (
             <Card key={i} className="border-zinc-800/80 bg-zinc-950 text-zinc-100 relative group overflow-hidden">
               <div className="absolute inset-x-0 bottom-0 h-0.5 bg-zinc-800 group-hover:bg-cyan-500/60 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
@@ -58,7 +66,7 @@ export default function CompanyPage() {
             </p>
             <div className="pt-2">
               <Button size="sm" className="bg-zinc-900 border border-zinc-800 text-zinc-300 hover:bg-zinc-800 text-xs px-4">
-                Review Audit Enclaves
+                Review Audit Reports
               </Button>
             </div>
           </div>

@@ -61,7 +61,7 @@ export default function Home() {
               <div className="flex items-center justify-between border-b border-zinc-800/40 pb-3">
                 <div className="flex items-center gap-x-2">
                   <div className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(34,211,238,0.6)]" />
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-zinc-400">Transit Terminal 01</span>
+                  <span className="font-mono text-[10px] uppercase tracking-widest text-zinc-400">Live Transaction Flow</span>
                 </div>
                 <span className="font-mono text-[9px] text-zinc-600">ID: #OPX-77X-SECURE</span>
               </div>
@@ -98,8 +98,8 @@ export default function Home() {
 
                 {/* Validation Status Box */}
                 <div className="mt-6 w-4/5 rounded-xl border border-cyan-500/20 bg-cyan-500/[0.02] p-3 text-center">
-                  <p className="text-[11px] font-mono tracking-wide text-cyan-400">Cryptographic Payload Sealed</p>
-                  <p className="text-[9px] font-mono text-zinc-500 mt-0.5">Hardware token response validated successfully</p>
+                  <p className="text-[11px] font-mono tracking-wide text-cyan-400">Payment Securely Processed</p>
+                  <p className="text-[9px] font-mono text-zinc-500 mt-0.5">Bank connection verified and encrypted successfully.</p>
                 </div>
               </div>
 
@@ -124,9 +124,9 @@ export default function Home() {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <div className="grid max-w-xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
               {[
-                { title: "The Cost of OTP Friction", desc: "Traditional SMS OTPs drop continuously due to volatile carrier loops, triggering high cart abandonment rates and massive merchant revenue leakage.", color: "from-cyan-500/20" },
-                { title: "Card Theft & Fraud Vectors", desc: "Sophisticated digital transaction hijacking leaks operational liquidity outside the banking loop, eroding foundational trust parameters.", color: "from-indigo-500/20" },
-                { title: "Stalled Integration Paths", desc: "Without modern infrastructure built to optimize accessibility alongside raw defenses, millions remain completely blocked from payment pools.", color: "from-emerald-500/20" }
+                { title: "The Cost of OTP Friction", desc: "Traditional SMS one-time passwords often fail due to unreliable network delivery. This frustrates users, leading them to abandon their shopping carts and costing businesses sales.", color: "from-cyan-500/20" },
+                { title: "Card Theft & Fraud Vectors", desc: "Hidden checkout vulnerabilities let attackers steal payment data mid-transit. This drains business revenue directly and destroys your customers' trust in your platform.", color: "from-indigo-500/20" },
+                { title: "Stalled Integration Paths", desc: "Legacy payment networks are too complicated to set up and lack modern security features. This prevents millions of potential global users from successfully checking out.", color: "from-emerald-500/20" }
               ].map((item, index) => (
                 <div key={index} className="relative rounded-xl border border-zinc-800/80 bg-zinc-950 p-8 transition-all hover:border-zinc-700 overflow-hidden group">
                   <div className={`absolute -right-8 -bottom-8 h-20 w-20 rounded-full bg-gradient-to-br ${item.color} to-transparent blur-xl`} />
@@ -157,9 +157,9 @@ export default function Home() {
           <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {[
-                { title: "Intelligent Risk Scoring", text: "Every incoming execution undergoes deep contextual telemetry analysis, filtering out card-not-present vectors before settlements commit.", grad: "from-cyan-500/10 via-transparent" },
-                { title: "Zero-Friction Approvals", text: "Empower account holders with instantaneous hardware-level prompts, eliminating dependency loops on lagging carrier networks.", grad: "from-indigo-500/10 via-transparent" },
-                { title: "Unified API Architecture", text: "Engineered to slot seamlessly into enterprise cores, transportation terminals, and micro-commerce portals with programmatic precision.", grad: "from-emerald-500/10 via-transparent" }
+                { title: "Intelligent Risk Scoring", text: "Every transaction is instantly analyzed for fraud, blocking high-risk or stolen card activity before the payment goes through.", grad: "from-cyan-500/10 via-transparent" },
+                { title: "Zero-Friction Approvals", text: "Give users instant, secure approval prompts right on their devices, removing the need to wait for slow SMS text codes.", grad: "from-indigo-500/10 via-transparent" },
+                { title: "Unified API Architecture", text: "Built to integrate easily into enterprise backends, physical checkout terminals, and online storefronts.", grad: "from-emerald-500/10 via-transparent" }
               ].map((card, i) => (
                 <Card key={i} className="border-zinc-800/80 bg-zinc-950 text-zinc-100 overflow-hidden shadow-xl transition-all hover:border-zinc-700 relative group">
                   <div className={`absolute inset-0 bg-gradient-to-b ${card.grad} to-transparent opacity-40`} />
@@ -194,7 +194,7 @@ export default function Home() {
               <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-b from-cyan-500/5 to-transparent blur-xl rounded-full" />
               <TabsContent value="banking" className="outline-none">
                 <h3 className="text-base font-bold text-white tracking-wide">Commercial Banking & Digital Wallets</h3>
-                <p className="text-xs text-zinc-400 mt-2 leading-6">Mitigate balance chargeback ratios and protect global banking layers. Our micro-telemetry nodes integrate into transaction structures directly without affecting operational throughput speed.</p>
+                <p className="text-xs text-zinc-400 mt-2 leading-6">Reduce chargeback rates and keep your banking systems safe. Our security software integrates directly into your payment flows without slowing down transaction speeds.</p>
               </TabsContent>
               <TabsContent value="ecommerce" className="outline-none">
                 <h3 className="text-base font-bold text-white tracking-wide">High-Volume Retail Modules</h3>
@@ -202,7 +202,7 @@ export default function Home() {
               </TabsContent>
               <TabsContent value="transit" className="outline-none">
                 <h3 className="text-base font-bold text-white tracking-wide">High-Throughput Metro Architectures</h3>
-                <p className="text-xs text-zinc-400 mt-2 leading-6">Deploy automated terminal processing designed for aggressive verification velocities. SwipeX targets both hybrid offline ledger sync and instantaneous online channels smoothly.</p>
+                <p className="text-xs text-zinc-400 mt-2 leading-6">Set up automated terminal processing built for ultra-fast checkouts. SwipeX handles both offline sync updates and real-time online transactions smoothly.</p>
               </TabsContent>
               <TabsContent value="government" className="outline-none">
                 <h3 className="text-base font-bold text-white tracking-wide">Public Clearing Pipelines</h3>

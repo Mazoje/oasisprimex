@@ -17,8 +17,8 @@ export default function SwipexSecurePage() {
               SwipeX Secure Protocol
             </h1>
             <p className="mt-6 text-sm text-zinc-400 max-w-xl leading-7">
-              Eliminate vulnerable out-of-band authorization models. SwipeX Secure injects non-repudiation and cryptographic validation layers straight into native payload flights, bypassing brittle SMS telecom layers entirely.
-            </p>
+            Replace vulnerable and outdated approval methods. SwipeX Secure builds encryption and verification directly into the transaction data, bypassing unreliable SMS text networks entirely.
+              </p>
             <div className="mt-8 flex gap-x-4">
               <Button size="sm" className="bg-indigo-600 text-white hover:bg-indigo-500 font-medium text-xs rounded-lg px-4">
                 Deploy Sandbox Token
@@ -59,9 +59,9 @@ export default function SwipexSecurePage() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
-            { title: "Hardware-Attested Keys", desc: "Generates unique transaction key pairs sealed inside secure mobile hardware enclaves, removing basic phase phishing vectors completely." },
-            { title: "Dynamic Payload Mutation", desc: "Every unique request systematically mutates parameters in flight. Intercepted execution scripts become structurally useless within milliseconds." },
-            { title: "Deterministic Risk Engine", desc: "Tracks velocity telemetry metrics alongside local device fingerprint states to shut down fraud attempts instantly before authorization loops fire." }
+            { title: "Hardware-Attested Keys", desc: "Generates unique transaction keys locked inside your phone's secure chip, completely blocking common phishing scams." },
+            { title: "Dynamic Payload Mutation", desc: "Constantly changes the data code for every single request mid-transit. If someone tries to intercept your transaction, the stolen data becomes completely useless within milliseconds." },
+            { title: "Deterministic Risk Engine", desc: "Tracks transaction speeds and checks device details to block fraud attempts instantly before a payment can even begin." }
           ].map((feat, i) => (
             <Card key={i} className="border-zinc-800/80 bg-zinc-950 text-zinc-100 relative group overflow-hidden">
               <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-indigo-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
@@ -80,14 +80,14 @@ export default function SwipexSecurePage() {
       <section className="mx-auto max-w-7xl px-6 lg:px-8 mt-24">
         <div className="border border-zinc-800/50 bg-gradient-to-b from-zinc-950 to-[#030712] rounded-2xl p-8 lg:p-12">
           <h3 className="text-lg font-bold text-white tracking-wide text-center">How SwipeX Secure Prevents Takeovers</h3>
-          <p className="text-xs text-zinc-500 text-center mt-2 max-w-xl mx-auto">A programmatic validation pipeline executing out-of-band across decentralized channels.</p>
+          <p className="text-xs text-zinc-500 text-center mt-2 max-w-xl mx-auto">A secure validation workflow that processes payments independently across networks.</p>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 relative">
             {[
-              { step: "01", name: "Token Generation", detail: "Client framework emits transient transaction parameters paired to contextual hardware metrics." },
-              { step: "02", name: "Isolated Handshake", detail: "Payload routes via dedicated HSM nodes, verifying original cryptosignatures without checking cleartext." },
-              { step: "03", name: "Hardware Attestation", detail: "The target endpoint signs a secure confirmation challenge using localized private keys." },
-              { step: "04", name: "Atomic Settlement", detail: "Clearance loops commit verified payloads securely inside the target data warehouse interface." }
+              { step: "01", name: "Token Generation", detail: "The app creates a temporary, unique code for your transaction tied directly to your specific device." },
+              { step: "02", name: "Secure Connection", detail: "The transaction data routes through private, protected servers to verify your digital signature without ever exposing your sensitive details." },
+              { step: "03", name: "Device Check", detail: "Your device confirms ownership by signing a quick security challenge using its built-in, private security keys." },
+              { step: "04", name: "Instant Settlement", detail: "The verified transaction completes successfully and saves securely inside the main database." }
             ].map((phase, idx) => (
               <div key={idx} className="relative flex flex-col items-center text-center group">
                 <div className="h-10 w-10 rounded-xl bg-zinc-900 border border-zinc-800 text-indigo-400 font-mono font-bold flex items-center justify-center text-sm shadow-md mb-4 group-hover:border-indigo-500/40 group-hover:text-white transition-colors">

@@ -66,8 +66,8 @@ const securePayload = await oasis.payloads.seal({
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
             { title: "Native Edge Wrappers", desc: "Lightweight plugins crafted explicitly for Next.js Middleware, Cloudflare Workers, and Vercel Edge networks to resolve tokens before computing layouts." },
-            { title: "Webhook Telemetry Streams", desc: "Subscribe to secure transactional mutations with cryptographically signed payloads, guaranteeing absolute event delivery safety." },
-            { title: "Automated Replay Protection", desc: "System environments auto-validate built-in temporal nonces on all network endpoints, keeping integration matrices completely safe out of the box." }
+            { title: "Webhook Telemetry Streams", desc: "Receive real-time alerts for every transaction change. Every alert comes with a secure digital signature to guarantee it arrives safely without being tampered with." },
+            { title: "Automated Replay Protection", desc: "Automatically checks unique, one-time security codes for every network request. This stops attackers from copying or repeating your old transactions, keeping your integration completely safe out of the box." }
           ].map((feat, i) => (
             <Card key={i} className="border-zinc-800/80 bg-zinc-950 text-zinc-100 relative group overflow-hidden">
               <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />

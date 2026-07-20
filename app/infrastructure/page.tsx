@@ -15,8 +15,8 @@ export default function InfrastructurePage() {
             Distributed Telemetry Engine
           </h1>
           <p className="mt-6 text-sm text-zinc-400 max-w-2xl leading-7">
-            A resilient multi-region clearing matrix engineered to process secure financial payloads across volatile carrier nodes with sub-15ms overhead. OasisPrimeX decouples consensus mapping from regional infrastructure loops.
-          </p>
+           A highly reliable, multi-region clearing network built to process secure payment data across unstable mobile networks in under 15ms. OasisPrimeX separates your data verification from regional server dependencies.
+            </p>
         </div>
       </section>
 
