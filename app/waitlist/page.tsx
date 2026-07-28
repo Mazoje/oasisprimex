@@ -81,8 +81,15 @@ export default function WaitlistPage() {
           <p className="text-sm text-red-400 font-medium">{errorMsg}</p>
         )}
 
+        {/* Subtext with discreet inline Admin Portal link */}
         <p className="text-xs text-slate-500">
-          No spam. Unsubscribe at any time.
+          No spam. Unsubscribe at any time.{" "}
+          <a 
+            href="/admin" 
+            className="hover:text-slate-400 transition-colors duration-150 underline decoration-slate-700 underline-offset-4 ml-1"
+          >
+            Admin Portal
+          </a>
         </p>
       </div>
     </main>
