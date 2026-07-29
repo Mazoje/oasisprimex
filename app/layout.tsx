@@ -94,7 +94,7 @@ export default function RootLayout({
                   ))}
                   <hr className="border-zinc-900 my-2" />
                   <div className="flex flex-col gap-y-3 pt-2">
-                    <a href="/sign-in" onClick={() => setIsOpen(false)} className="text-xs text-zinc-400 hover:text-white">Sign In</a>
+                    <a href="/waitlist" onClick={() => setIsOpen(false)} className="text-xs text-zinc-400 hover:text-white">Join waitlist</a>
                     <a href="/docs" onClick={() => setIsOpen(false)} className="text-xs text-cyan-400 font-semibold">View API Docs</a>
                   </div>
                 </nav>
