@@ -28,7 +28,7 @@ export default function Home() {
               The Security Layer for Africa’s Digital Economy
             </h1>
             <p className="mt-6 text-base leading-7 text-zinc-400 max-w-xl">
-            OasisPrimeX builds intelligent, real-time financial infrastructure that eliminates payment fraud, upgrades traditional authentication workflows, and powers seamless digital commerce for banks, fintechs, and enterprises.  
+            OasisPrimeX builds intelligent, real-time security infrastructure that eliminates payment fraud, upgrades traditional authentication workflows, and powers seamless digital commerce for banks, fintechs, and enterprises.  
             </p>     
             {/* Dual Gradient Action Buttons */}
             <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-3">
